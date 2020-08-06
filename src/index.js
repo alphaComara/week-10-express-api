@@ -18,8 +18,8 @@ app.post('/', async (apiRequest, apiResponse) => {
   const newProduct = apiRequest.body;
   await createProduct(newProduct);
   apiResponse.send({ message: 'New product created.', 
-  allProducts: await getProducts(),
-  thanks:
+  allProducts: await getProducts()
+
 });
 });
 
